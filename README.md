@@ -8,11 +8,11 @@ A production-ready, highly available web architecture deployed on AWS using Terr
 The infrastructure is designed for **fault tolerance** and **scalability**. It automatically handles traffic distribution and scales EC2 instances based on CPU utilization metrics across multiple Availability Zones.
 
 ## 🛠️ Tech Stack
-* **IaC:** Terraform
 * **Cloud:** Amazon Web Services (AWS)
 * **Services:** VPC, EC2, ALB, ASG, Route 53, CloudWatch, SNS
-* **DevOps Tools:** Docker, Bash Scripting
-* **Web:** Nginx / HTML5 / CSS3
+* **IaC:** Terraform
+* **Automation & Containers:** Docker, Bash Scripting
+* **Web:** Nginx, HTML5
 
 ## 💡 Key Features
 * **High Availability:** Traffic is routed through an ALB to multiple instances across different AZs.
