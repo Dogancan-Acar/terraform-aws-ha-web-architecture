@@ -36,10 +36,19 @@ The infrastructure is designed for **fault tolerance** and **scalability**. It a
 ├── dockerfile        # Custom image config
 └── index.html        # Web app content
 ```
-📸 Visual Evidence
-1. Live Deployment & Custom Domain
-2. Infrastructure Health (Target Group)
-3. Monitoring (CloudWatch Alarm)
+## 📸 Visual Evidence
+
+### 1. Live Deployment & Custom Domain
+![Live Website](./images/live-site.png)
+
+### 2. Infrastructure Health (Target Group)
+![Target Group Health](./images/target-group-health.png)
+
+### 3. Running Instances (EC2)
+![EC2 Instances](./images/ec2-instances.png)
+
+### 4. Monitoring & Alerts (CloudWatch)
+![CloudWatch Alarm](./images/cloudwatch-alarm.png)
 
 ⚙️ How to Run
     Clone the repo:
