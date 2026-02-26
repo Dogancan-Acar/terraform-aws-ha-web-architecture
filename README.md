@@ -15,11 +15,12 @@ The infrastructure is designed for **fault tolerance** and **scalability**. It a
 * **Web:** Nginx, HTML5
 
 ## 💡 Key Features
-* **High Availability:** Traffic is routed through an ALB to multiple instances across different AZs.
-* **Auto Scaling:** Dynamic adjustment of instances (Min: 1, Max: 3, Desired: 2).
+* **Infrastructure as Code (IaC):** The entire AWS environment is provisioned and managed using **Terraform**, ensuring consistency, version control, and repeatability.
+* **High Availability & Load Balancing:** Traffic is routed through an ALB to multiple instances across different Availability Zones (AZs).
+* **Auto Scaling:** The ASG dynamically adjusts the number of active instances (Min: 1, Max: 3, Desired: 2) based on traffic.
 * **Automated Deployment:** EC2 instances are bootstrapped with a Bash script to install Docker and pull my **custom-built image** (`dogancan0/2dd-website:v1`).
-* **Monitoring:** CloudWatch triggers SNS email alerts if CPU exceeds 80%.
-* **Modular Code:** Fully driven by `variables.tf` and `outputs.tf`.
+* **Monitoring & Alerting:** CloudWatch monitors CPU utilization and triggers an SNS email alert if it exceeds 80%.
+* **Modular Design:** Highly flexible configuration using `variables.tf` and `outputs.tf` to avoid hardcoded values.
 
 ## 📁 Project Structure
 ```text
