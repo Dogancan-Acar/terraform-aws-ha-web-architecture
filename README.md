@@ -35,25 +35,22 @@ The infrastructure is designed for **fault tolerance** and **scalability**. It a
 ├── cloudwatch.tf     # Metrics & Alarms
 ├── dockerfile        # Custom image config
 └── index.html        # Web app content
-
-## 📸 Visual Evidence
+```
+📸 Visual Evidence
 1. Live Deployment & Custom Domain
 2. Infrastructure Health (Target Group)
 3. Monitoring (CloudWatch Alarm)
 
-## ⚙️ How to Run
+⚙️ How to Run
     Clone the repo:
-    Bash
-
     git clone [https://github.com/Dogancan-Acar/terraform-aws-ha-web-architecture.git](https://github.com/Dogancan-Acar/terraform-aws-ha-web-architecture.git)
 
-    Setup Variables: Update variables.tf with your email and domain.
+    Setup Variables:
+    Update variables.tf with your specific values (e.g., your email for CloudWatch alerts).
 
-    Initialize: ```bash
+    Initialize & Deploy:
     terraform init
-
-    Deploy: ```bash
     terraform apply --auto-approve
 
-    Cleanup: ```bash
+    Cleanup:
     terraform destroy --auto-approve
