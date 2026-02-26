@@ -2,7 +2,7 @@
 
 A production-ready, highly available web architecture deployed on AWS using Terraform. This project demonstrates the provisioning of an Auto Scaling Group behind an Application Load Balancer, serving a custom Dockerized web application.
 
-## Architecture Overview
+## 🚀 Architecture Overview
 The infrastructure is designed for fault tolerance and scalability. It automatically handles traffic distribution and scales EC2 instances based on CPU utilization metrics across multiple Availability Zones.
 
 ## 🛠️ Tech Stack
@@ -34,3 +34,22 @@ The infrastructure is designed for fault tolerance and scalability. It automatic
 ├── cloudwatch.tf     # CPU metrics and SNS email alerts
 ├── dockerfile        # Docker configuration to build the custom Nginx image
 └── index.html        # Custom web application content (HTML5/CSS)
+
+📸 Visual Evidence
+1. Live Deployment & Custom Domain
+2. Infrastructure Health (Target Group & EC2)
+3. Monitoring & Alarms (CloudWatch)
+
+⚙️ How to Run
+    Clone the repository:
+    git clone https://github.com/Dogancan-Acar/terraform-aws-ha-web-architecture.git
+
+    Update Variables: Open variables.tf and update the alarm_email or domain_name if necessary.
+
+    Initialize Terraform: Run terraform init to download providers.
+
+    Plan Infrastructure: Run terraform plan to see the resources that will be created.
+
+    Apply Changes: Run terraform apply and type yes to deploy to AWS.
+
+    Cleanup: Run terraform destroy to remove all resources and avoid costs.
